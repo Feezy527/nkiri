@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nkiri.com</title>
+
+    <style>
+        @media (max-width: 850px) {
+            body {
+                padding: 5px;
+            }
+
+            div.header {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .header-container {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+
+            .nav-link {
+                display: none;
+                margin-left: 0px;
+            }
+
+            .search-icon {
+                display: none;
+            }
+
+            .menu {
+                display: flex;
+                align-self: baseline;
+                margin-top: 20px;
+            }
+
+            .container {
+                width: 100%;
+                margin: 10px 0px;
+            }
+
+            .notice {
+                border: 1px solid rgb(212, 230, 253);
+                border-left: 3px solid rgb(157, 197, 252);
+                background-color: rgb(212, 230, 253);
+                padding: 15px;
+                margin-bottom: 35px;
+            }
+
+            .notice p {
+                margin-top: 5px;
+                font-size: 12px;
+                line-height: 20px;
+            }
+
+            .banner-icon {
+                height: 50px;
+            }
+
+            section {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .movie-title {
+                font-weight: bold;
+                font-size: 12px;
+                padding: 16px;
+                line-height: 17px;
+                box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div class="icon-wrapper">
+                <img class="logo-icon" src="icon/cropped-cropped-logo.png" alt="nkiri_logo">
+            </div>
+
+            <ul class="nav-link">
+                <a href="">Home</a>
+                <a href="">Chinese Drama</a>
+                <a href="">K-Drama</a>
+                <a href="">TV Series</a>
+                <a href="">Movies</a>
+                <a href="">Genre</a>
+                <a href="">How to download</a>
+                <a href=""><img class="search-icon" src="icon/search.svg" alt="search_icon"></a>
+            </ul>
+
+            <div class="menu">
+                <img class="menu-icon" src="icon/list.svg" alt="">
+                <p>Menu</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="notice">
+            <h5>Notice</h5>
+            <p>Nkiri.com has pop ads which means a new tab opens once you click just click close the new tab and
+                continue browsing. Please stay safe</p>
+        </div>
+        <div class="banner">
+            <img class="banner-icon" src="icon/Dramakey-ad.jpeg" alt="banner">
+        </div>
+
+        <h5>Search for what to download here.</h5>
+        <input type="text" placeholder="Search Here" class="search-bar">
+
+        <h2>New Drama Uploads</h2>
+        <section class="k-drama js-k-drama"></section>
+
+        <div class="more-drama">Load More Drama</div>
+        <div class="banner">
+            <img class="banner-icon" src="icon/Dramakey-ad.jpeg" alt="banner">
+        </div>
+        <h2>New Movie Uploads</h2>
+        <section class="h-movie js-h-movie"> </section>
+
+        <div class="more-drama">Load More Drama</div>
+        <div class="banner">
+            <img class="banner-icon" src="icon/Dramakey-ad.jpeg" alt="banner">
+        </div>
+        <h2>New Series Uploads</h2>
+        <section class="series js-series"></section>
+        <div class="more-drama">Load More Drama</div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+<div class="footer"></div>
+
+</html>
